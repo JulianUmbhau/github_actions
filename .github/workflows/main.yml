@@ -1,3 +1,5 @@
+name: My worflow
+
 on: [push]
 
 jobs:
@@ -7,10 +9,10 @@ jobs:
     steps:
       # To use this repository's private action,
       # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Checkout main
-        run: git checkout master
+        uses: actions/checkout@v2
+        with: 
+          repository: JulianUmbhau/github_actions
       - name: Hello world action step
         uses: ./action.yml
         id: hello

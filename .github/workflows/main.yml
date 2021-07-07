@@ -9,14 +9,10 @@ jobs:
     steps:
       # To use this repository's private action,
       # you must check out the repository
-      - name: Checkout main
-        uses: actions/checkout@v2
-        with: 
-          repository: JulianUmbhau/github_actions
-      - name: Hello world action step
-        uses: ./action.yml
+      - name: Action step
         id: hello
-        with:
+        uses: actions/github_actions
+        with: 
           who-to-greet: 'JJUJ'
       # Use the output from the `hello` step
       - name: Get the output time

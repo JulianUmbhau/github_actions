@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkout main
-        uses: git checkout master
+        run: git checkout master
       - name: Hello world action step
         uses: ./action.yml
         id: hello

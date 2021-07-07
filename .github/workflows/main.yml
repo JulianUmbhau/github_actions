@@ -8,7 +8,9 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: actions/checkout
+        uses: actions/checkout@v2
+      - name: Checkout main
+        uses: git checkout master
       - name: Hello world action step
         uses: ./action.yml
         id: hello

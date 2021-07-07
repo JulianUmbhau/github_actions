@@ -11,7 +11,7 @@ jobs:
       # you must check out the repository
       - name: Action step
         id: hello
-        uses: actions/JulianUmbhau/github_actions@v1.0
+        uses: JulianUmbhau/github_actions@v1.0
         with: 
           who-to-greet: 'JJUJ'
       # Use the output from the `hello` step

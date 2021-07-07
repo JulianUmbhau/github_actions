@@ -9,7 +9,7 @@ jobs:
       # you must check out the repository
       - name: Action step
         id: hello
-        uses: JulianUmbhau/github_actions@v1.0
+        uses: JulianUmbhau/github_actions@v1.1
         with: 
           who-to-greet: 'JJUJ'
       # Use the output from the `hello` step

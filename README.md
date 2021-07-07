@@ -16,6 +16,6 @@ The time we greeted you.
 
 ## Example usage
 
-uses: JulianUmbhau/github_actions@v1.0
+uses: JulianUmbhau/github_actions@v1.1
 with:
   who-to-greet: 'JJUJ'
